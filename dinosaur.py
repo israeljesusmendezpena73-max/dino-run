@@ -3,6 +3,7 @@ import sys
 import random
 import os
 pygame.init()
+cielo=(10,10,10)
 x,y=800,500
 window=pygame.display.set_mode(x,y)
 pygame.display.set_caption("dino run")
