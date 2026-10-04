@@ -16,3 +16,5 @@ teo=36
 dino_img=pygame.image_load(os.path.join("img","dino.png").convert_alpha
 cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
 roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha                           
+def jugar():
+  
