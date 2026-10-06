@@ -1,5 +1,4 @@
-import pygame
-import sys
+import pygameimport sys
 import random
 import os
 pygame.init()
@@ -21,6 +20,7 @@ dino_img=pygame.image_load(os.path.join("img","dino.png").convert_alpha
 cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
 roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha                           
 def jugar():
+  cactus=[]
   while==mode:
   ry=robot.y
   rx=robot.x
@@ -40,4 +40,6 @@ def jugar():
         ees=True
         ds=0
   if keys[pygame.K_DOWN] or keys[pygame.s]:
-    
+        rcollider=pygame.rect(40,20,rx+10,ry+20)
+  if mode=True:
+     cactus=rect
