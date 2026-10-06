@@ -39,3 +39,5 @@ def jugar():
         if robot.y<sy
         ees=True
         ds=0
+  if keys[pygame.K_DOWN] or keys[pygame.s]:
+    
