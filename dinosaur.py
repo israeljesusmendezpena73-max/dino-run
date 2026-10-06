@@ -27,6 +27,8 @@ roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha
 def jugar():
   tem=0
   cactuse=[]
+  pajaros=[]
+  rocas=[]
   while mode==True:
   dy=dino.y
   dx=dino.x
