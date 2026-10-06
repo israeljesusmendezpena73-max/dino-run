@@ -26,9 +26,9 @@ def jugar():
   tem=0
   cactuse=[]
   while mode==True:
-  ry=robot.y
-  rx=robot.x
-  rcollider=(40,40,rx+10,ry+20)
+  ry=dino.y
+  rx=dino.x
+  rcolliderr=(40,40,rx+10,ry+20)
   keys=pygame.key.get_pressed
   if keys[pygame.a] or  keys[pygame.SPACE] or keys[pygame.K_UP] and ds<3:
     robot.y +=fs
@@ -45,3 +45,7 @@ def jugar():
         ds=0
   if keys[pygame.K_DOWN] or keys[pygame.s]:
         rcollider=pygame.rect(40,20,rx+10,ry+20)
+        dino dunx.x=rx
+        dino dunk.y=ry
+        dino dunk_img=pygame.image_load(os.path.join("img","dino dunk.png").convert_alpha
+       
