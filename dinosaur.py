@@ -1,4 +1,5 @@
-import pygameimport sys
+import pygame
+import sys
 import random
 import os
 pygame.init()
@@ -46,11 +47,12 @@ def jugar():
         ds=0
   if keys[pygame.K_DOWN] or keys[pygame.s]:
         ed=0
-        rcollider=pygame.rect(40,20,dx+10,dy)
+        dcollider=pygame.rect(40,20,dx+10,dy)
         dino dunk.x=rx
         dino dunk.y=ry
-elif 
+  elif  not(keys[pygame.K_DOWN] or keys[pygame.s]):
+        ed=1
   if ed=1:
         window.blit(dino_img)
-elif ed=0:
-        window.blit(dino dunk_img)
+  elif ed=0
+       window.blit(dino dunk_img)
