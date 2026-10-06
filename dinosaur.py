@@ -30,6 +30,8 @@ def jugar():
   pajaros=[]
   rocas=[]
   while mode==True:
+  fps.tick
+  window.fill(cielo)
   dy=dino.y
   dx=dino.x
   dcollider=(40,40,dx+10,dy+20)
