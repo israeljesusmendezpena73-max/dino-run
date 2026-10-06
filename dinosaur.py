@@ -22,7 +22,7 @@ ed=1
 dino_img=pygame.image_load(os.path.join("img","dino.png").convert_alpha
 cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
 dino dunk_img=pygame.image_load(os.path.join("img","dino dunk.png").convert_alpha
-roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha                                     
+roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha
 def jugar():
   tem=0
   cactuse=[]
@@ -49,7 +49,8 @@ def jugar():
         rcollider=pygame.rect(40,20,dx+10,dy)
         dino dunk.x=rx
         dino dunk.y=ry
+elif 
   if ed=1:
-        window.blit(dino_img,)
+        window.blit(dino_img)
 elif ed=0:
-        window.blit(dino dunk_img,)
+        window.blit(dino dunk_img)
