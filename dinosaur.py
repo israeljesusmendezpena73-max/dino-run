@@ -1,5 +1,4 @@
-import pygame
-import sys
+import pygameimport sys
 import random
 import os
 pygame.init()
@@ -19,9 +18,11 @@ ds=0
 vy=0
 vc=2
 ees=True
+ed=1
 dino_img=pygame.image_load(os.path.join("img","dino.png").convert_alpha
 cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
-roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha                           
+dino dunk_img=pygame.image_load(os.path.join("img","dino dunk.png").convert_alpha
+roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha                                     
 def jugar():
   tem=0
   cactuse=[]
@@ -44,8 +45,7 @@ def jugar():
         ees=True
         ds=0
   if keys[pygame.K_DOWN] or keys[pygame.s]:
+        ed=0
         rcollider=pygame.rect(40,20,rx+10,ry+20)
-        dino dunx.x=rx
+        dino dunk.x=rx
         dino dunk.y=ry
-        dino dunk_img=pygame.image_load(os.path.join("img","dino dunk.png").convert_alpha
-       
