@@ -35,3 +35,4 @@ def jugar():
         delay(100)
         if robot.y<sy
         ees=True
+        ds=0
