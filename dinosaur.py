@@ -63,3 +63,9 @@ def jugar():
         window.blit(dino_img)
   elif ed=0
        window.blit(dino dunk_img)
+ if mode==True:
+       while mode==True:
+         tem+=1
+         delay(1000)
+         if tem==teo:
+           tem=0
