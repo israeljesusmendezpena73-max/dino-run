@@ -75,13 +75,14 @@ def jugar():
          if tem==teo:
            ob=macth.ramdom(0,3)
            if ob==1:
+             for nuevo in pajaros:
              flappy.x=200
              fcollider=pygame.rect(20,20,fx,fy)
              macth.ramdom(0,200)
              while flappy.x>-300:
                flappy.x-=vo
-           if flappy.x==-300:
-             pajaros.append(nuevo)
+               if flappy.x==-300:
+                 pajaros.append(nuevo)
            if dcollider.collididect(fcollider):
              mode=False
   if mode==False:
