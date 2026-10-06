@@ -2,8 +2,11 @@ import pygame
 import sys
 import random
 import os
+import macth
 pygame.init()
 cielo=(10,10,10)
+red=(220,60,60)
+white=(255,255,255)
 x,y=800,500
 window=pygame.display.set_mode(x,y)
 pygame.display.set_caption("dino run")
@@ -17,7 +20,7 @@ teo=36
 sy=300
 ds=0
 vy=0
-vc=2
+vo=2
 ees=True
 ed=1
 dino_img=pygame.image_load(os.path.join("img","dino.png").convert_alpha
@@ -45,6 +48,8 @@ def jugar():
     ds+=1
     vy=fs
     vy+=g
+    fx=flappy.x
+    fy=flappy.y
     if dino.y>=sy:
       while ees=False:
         dino.y-=g
@@ -68,4 +73,20 @@ def jugar():
          tem+=1
          delay(1000)
          if tem==teo:
-           tem=0
+           ob=macth.ramdom(0,3)
+           if ob==1:
+             flappy.x=200
+             fcollider=pygame.rect(20,20,fx,fy)
+             macth.ramdom(0,200)
+             while flappy.x>-300:
+               flappy.x-=vo
+           if flappy.x==-300:
+             pajaros.append(nuevo)
+           if dcollider.collididect(fcollider):
+             mode=False
+  if mode==False:
+     while mode==False:
+       kees=pygame.keys.get_pressed
+       txt1
+       if kees[pygame.r]:
+         mode=True
