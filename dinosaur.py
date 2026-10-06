@@ -32,6 +32,9 @@ def jugar():
   while mode==True:
   fps.tick
   window.fill(cielo)
+  for evento in pygame.event.get:
+    pygame.quit
+    sys.exit 
   dy=dino.y
   dx=dino.x
   dcollider=(40,40,dx+10,dy+20)
