@@ -22,6 +22,9 @@ cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
 roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha                           
 def jugar():
   while==mode:
+  ry=robot.y
+  rx=robot.x
+  rcollider=(40,40,rx+10,ry+20)
   keys=pygame.key.get_pressed
   if keys[pygame.a] or  keys[pygame.SPACE] or keys[pygame.K_UP] and ds<3:
     robot.y +=fs
