@@ -23,6 +23,7 @@ vy=0
 vo=2
 ees=True
 ed=1
+score
 dino_img=pygame.image_load(os.path.join("img","dino.png").convert_alpha
 cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
 dino dunk_img=pygame.image_load(os.path.join("img","dino dunk.png").convert_alpha
@@ -72,6 +73,7 @@ def jugar():
  if mode==True:
        while mode==True:
          tem+=1
+         time+=1
          delay(1000)
          if tem==teo:
            ob=macth.ramdom(0,3)
@@ -85,6 +87,7 @@ def jugar():
                if ocollider.collididect(dcollider):
                   mode=False
                if flappy.x==-300:
+                  score+=1
                   pajaros.append("nuevo")
            if ob==2:
               for "nuevo" in cactuse:
@@ -97,6 +100,7 @@ def jugar():
                   if ocollider.collididect(dcollider):
                     mode=False
                   if cactus.x==-300:
+                    score+=1
                     cactuse.append("nuevo")
             if ob==3:
               for "nuevo" in rocas:
@@ -109,6 +113,7 @@ def jugar():
                 if dcollider.collididect(ocollider):
                   mode=False
                 if roca.x==-300:
+                  score+=1
                   rocas.append("nuevo")
            if ob==1:
                window.blit(flappy_img)
@@ -117,7 +122,16 @@ def jugar():
            if ob==3:
               window.blit(roca_img)
      while mode==False:
-       kees=pygame.keys.get_pressed
-       txt1
+       kees=pygame.keyscore=0_pressed
+       txt1=Fuente.render("game over",True,e
+        red)
+       txt2=Fuente.render(f"Puntaje final:{score}","y tu tiempo en segundos",{score},True,white)
+       txt3=Fuente.rendrer("Presiona R para rewiniciar",True,white)
+       window.blit(txt1,(x//2-60, y//2-40))
+       window.blit(txt2,(x//-90,y//2))
+       window.blit(txt3,(x//2-130, y//2+40))
+       pygame.display.flip()
        if kees[pygame.r]:
          mode=True
+         score=0
+         time=0
