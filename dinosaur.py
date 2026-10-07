@@ -16,7 +16,7 @@ vob=0
 fs=-15
 g=0.8
 tem=0
-teo=36
+teo=40
 sy=300
 ds=0
 vy=0
@@ -88,6 +88,7 @@ def jugar():
                   mode=False
                if flappy.x==-300:
                   score+=1
+                  vo+=1
                   pajaros.append("nuevo")
            if ob==2:
               for "nuevo" in cactuse:
@@ -101,6 +102,7 @@ def jugar():
                     mode=False
                   if cactus.x==-300:
                     score+=1
+                    vo+=1
                     cactuse.append("nuevo")
             if ob==3:
               for "nuevo" in rocas:
@@ -114,6 +116,7 @@ def jugar():
                   mode=False
                 if roca.x==-300:
                   score+=1
+                  vo+=1
                   rocas.append("nuevo")
            if ob==1:
                window.blit(flappy_img)
@@ -122,9 +125,8 @@ def jugar():
            if ob==3:
               window.blit(roca_img)
      while mode==False:
-       kees=pygame.keyscore=0_pressed
-       txt1=Fuente.render("game over",True,e
-        red)
+       kees=pygame.key.get_pressed
+       txt1=Fuente.render("game over",True,red)
        txt2=Fuente.render(f"Puntaje final:{score}","y tu tiempo en segundos",{score},True,white)
        txt3=Fuente.rendrer("Presiona R para rewiniciar",True,white)
        window.blit(txt1,(x//2-60, y//2-40))
