@@ -110,12 +110,12 @@ def jugar():
                   mode=False
                 if roca.x==-300:
                   rocas.append("nuevo")
-            if ob==1:
-              window.blit(flappy_img)
-            if ob==2:
+           if ob==1:
+               window.blit(flappy_img)
+           if ob==2:
               window.blit(cactus_img)
            if ob==3:
-             window.blit(roca_img)
+              window.blit(roca_img)
      while mode==False:
        kees=pygame.keys.get_pressed
        txt1
