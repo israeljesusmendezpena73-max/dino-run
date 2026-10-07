@@ -27,6 +27,7 @@ dino_img=pygame.image_load(os.path.join("img","dino.png").convert_alpha
 cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
 dino dunk_img=pygame.image_load(os.path.join("img","dino dunk.png").convert_alpha
 roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha
+flappy_img=pygame.image.load.join("img","flappy.png")
 def jugar():
   tem=0
   cactuse=[]
@@ -75,17 +76,46 @@ def jugar():
          if tem==teo:
            ob=macth.ramdom(0,3)
            if ob==1:
-             for nuevo in pajaros:
-             flappy.x=200
-             fcollider=pygame.rect(20,20,fx,fy)
-             macth.ramdom(0,200)
+             for "nuevo" in pajaros:
+             flappy.x=800
+             ocollider=pygame.rect(20,20,fx,fy)
+             macth.ramdom(0,500)
              while flappy.x>-300:
                flappy.x-=vo
+               if ocollider.collididect(dcollider):
+                  mode=False
                if flappy.x==-300:
-                 pajaros.append(nuevo)
-           if dcollider.collididect(fcollider):
-             mode=False
-  if mode==False:
+                  pajaros.append("nuevo")
+           if ob==2:
+              for "nuevo" in cactuse:
+                cactus.x=800
+                cx=cactus.x
+                cy=cactus.y
+                ocollider=(20,40,cx,cy)
+                while cactus.x>-300:
+                  cactus.x-=vo
+                  if ocollider.collididect(dcollider):
+                    mode=False
+                  if cactus.x==-300:
+                    cactuse.append("nuevo")
+            if ob==3:
+              for "nuevo" in rocas:
+              roca.x=800:
+              rx=roca.x
+              ry=roca.y
+              ocollider=(40,40,rx,ry)
+              while roca.x>-300:
+                roca.x-=vo
+                if dcollider.collididect(ocollider):
+                  mode=False
+                if roca.x==-300:
+                  rocas.append("nuevo")
+            if ob==1:
+              window.blit(flappy_img)
+            if ob==2:
+              window.blit(cactus_img)
+           if ob==3:
+             window.blit(roca_img)
      while mode==False:
        kees=pygame.keys.get_pressed
        txt1
