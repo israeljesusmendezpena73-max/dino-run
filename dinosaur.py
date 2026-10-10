@@ -31,9 +31,16 @@ roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha
 flappy_img=pygame.image.load.join("img","flappy.png")
 dino_img=pygame.transform.scale(60,60)
 dino dunk_img=pygame.transform.scale(40,30)
-
+roca_img=pygame.transform.scale(50,50)
+flappy_img=pygame.transform.scale(20,20)
+cactus_img=pygame.transform.scale(20,60)
 def jugar():
   tem=0
+  dino=dino_img
+  dino dunk=dino dunk_img
+  flappy=flappy_img
+  roca=roca_img
+  cactus=cactus_img
   cactuse=[]
   pajaros=[]
   rocas=[]
@@ -53,8 +60,6 @@ def jugar():
     ds+=1
     vy=fs
     vy+=g
-    fx=flappy.x
-    fy=flappy.y
     if dino.y>=sy:
       while ees=False:
         dino.y-=g
@@ -64,15 +69,15 @@ def jugar():
         ds=0
   if keys[pygame.K_DOWN] or keys[pygame.s]:
         ed=0
-        dcollider=pygame.rect(40,20,dx+10,dy)
-        dino dunk.x=rx
-        dino dunk.y=ry
+        dcollider=pygame.rect(40,20,ddx+10,ddy)
+        dino dunk.x=ddx
+        dino dunk.y=ddy
   elif  not(keys[pygame.K_DOWN] or keys[pygame.s]):
         ed=1
   if ed=1:
-        window.blit(dino_img)
+        window.blit(dino)
   elif ed=0
-       window.blit(dino dunk_img)
+       window.blit(dino dunk)
  if mode==True:
        while mode==True:
          tem+=1
@@ -82,9 +87,11 @@ def jugar():
            ob=macth.ramdom(0,3)
            if ob==1:
              for "nuevo" in pajaros:
-             flappy.x=800
+             flappy.x=80
+             flappy.x=fx
+             flappy.y=fy
+             fy=macth.ramdom(0,500)
              ocollider=pygame.rect(20,20,fx,fy)
-             macth.ramdom(0,500)
              while flappy.x>-300:
                flappy.x-=vo
                if ocollider.collididect(dcollider):
@@ -98,7 +105,7 @@ def jugar():
                 cactus.x=800
                 cx=cactus.x
                 cy=cactus.y
-                ocollider=(20,40,cx,cy)
+                ocollider=(20,60,cx,cy)
                 while cactus.x>-300:
                   cactus.x-=vo
                   if ocollider.collididect(dcollider):
