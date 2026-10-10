@@ -29,6 +29,9 @@ cactus_img=pygame.image_load(os.path.join("img","cactus.png").convert_alpha
 dino dunk_img=pygame.image_load(os.path.join("img","dino dunk.png").convert_alpha
 roca_img=pygame.image_load(os.path.join("img","roca.png").convert_alpha
 flappy_img=pygame.image.load.join("img","flappy.png")
+dino_img=pygame.transform.scale(60,60)
+dino dunk_img=pygame.transform.scale(40,30)
+
 def jugar():
   tem=0
   cactuse=[]
@@ -42,7 +45,7 @@ def jugar():
     sys.exit 
   dy=dino.y
   dx=dino.x
-  dcollider=(40,40,dx+10,dy+20)
+  dcollider=(50,40,dx+10,dy+20)
   keys=pygame.key.get_pressed
   if keys[pygame.a] or  keys[pygame.SPACE] or keys[pygame.K_UP] and ds<3:
     dino.y +=fs
