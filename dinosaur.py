@@ -137,3 +137,5 @@ def jugar():
          mode=True
          score=0
          time=0
+while mode=True:
+  jugar()
